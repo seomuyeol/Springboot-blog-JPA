@@ -4,6 +4,8 @@ import java.sql.Timestamp;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -36,8 +38,10 @@ public class User {
     @Column(nullable = false, length = 50)
     private String email;
     
-    @ColumnDefault("'user'")
-    private String role;//Enumを使用するのがいい//admin, user, managerドメイン設定できる（範囲を設定）
+    //DBはRoleTypeはない
+    //@ColumnDefault("user")
+    @Enumerated(EnumType.STRING)
+    private RoleType role;//Enumを使用するのがいい//admin, user, managerドメイン設定できる（範囲を設定）
     
     @Column
     @CreationTimestamp//時間が自動で入力できる
