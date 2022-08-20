@@ -7,21 +7,18 @@
 		<div class="card m-2">
 			<div class="card-body">
 				<h4 class="card-title">タイトル</h4>
-				<p class="card-text">内容</p>
 				<a href="#" class="btn btn-primary">内容詳細</a>
 			</div>
 		</div>
 				<div class="card m-2">
 			<div class="card-body">
 				<h4 class="card-title">タイトル</h4>
-				<p class="card-text">内容</p>
 				<a href="#" class="btn btn-primary">内容詳細</a>
 			</div>
 		</div>
 				<div class="card m-2">
 			<div class="card-body">
 				<h4 class="card-title">タイトル</h4>
-				<p class="card-text">内容</p>
 				<a href="#" class="btn btn-primary">内容詳細</a>
 			</div>
 		</div>
