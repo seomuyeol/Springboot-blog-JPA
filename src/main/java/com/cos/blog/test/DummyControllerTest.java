@@ -47,7 +47,7 @@ public class DummyControllerTest {
 		User user = userRepository.findById(id).orElseThrow(new Supplier<IllegalArgumentException>() {
 			@Override
 			public IllegalArgumentException get() {
-				return new IllegalArgumentException(id+"を探せません。");
+				return new IllegalArgumentException("使用者を探せません。");
 			}
 		});
 		return user;
@@ -78,7 +78,7 @@ public class DummyControllerTest {
 		}
 		
 		
-		return  "id: " + id + "は削除されました。";
+		return  "は削除されました。:" + id;
 	}
 	
 	@PostMapping("/dummy/join")

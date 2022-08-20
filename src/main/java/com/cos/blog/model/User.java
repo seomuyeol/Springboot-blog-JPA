@@ -29,7 +29,7 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)//プロジェクトに繋いでいるDBナンバリングを使用する
     private int id;//auto_increment
     
-    @Column(nullable = false, length = 30)
+    @Column(nullable = false, length = 30, unique = true)
     private String username;// id
     
     @Column(nullable = false, length = 100)
