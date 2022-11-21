@@ -3,10 +3,7 @@
 <div class="jumbotron text-center" style="margin-bottom: 0">
 	<p>Create by Seo</p>
 	<p>☎070-0000-1234</p>
-	<p>京都世田谷区</p>
+	<p>東京都世田谷区</p>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
