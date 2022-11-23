@@ -17,7 +17,7 @@
 			</label>
 		</div>
 	</form>
-	<button type="btn-login" class="btn btn-primary">ログイン</button>
+	<button id="btn-login" class="btn btn-primary">ログイン</button>
 
 </div>
 <script src="/blog/js/user.js"></script>

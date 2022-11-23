@@ -21,13 +21,13 @@ public class UserApiController {
 
 	@PostMapping("/api/user")
 	public ResponseDto<Integer> save(@RequestBody User user) { //username password email
-		System.out.println("UserApiController : save ");
+		System.out.println("UserApiController : save 호출 ");
 		user.setRole(RoleType.USER);
 		userService.userSave(user);
 		return new ResponseDto<Integer>(HttpStatus.OK.value(), 1);
 	}
 	
-	@PostMapping("/blog/api/user/login")
+	@PostMapping("/api/user/login")
 	public ResponseDto<Integer> login(@RequestBody User user, HttpSession session) {
 		System.out.println("UserApiController : login 호출 ");
 		User principal = userService.userLogin(user);

@@ -10,6 +10,6 @@ public interface UserRepository extends JpaRepository<User, Integer>{
 	
 	// JPA Naming 전략
 	// Select * From user where username=? and password=?;
-	User findByUsernameandPassword(String username, String password);
+	User findByUsernameAndPassword(String username, String password);
 
 }

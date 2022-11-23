@@ -3,6 +3,9 @@ let index = {
 		$("#btn-save").on("click", ()=>{
 			this.save();
 		}); //on : 一番目パラメータはイベント、二番目は何をするか
+		$("#btn-login").on("click", ()=>{
+			this.login();
+		}); 
 	},
 	
 	save: function(){
@@ -12,8 +15,6 @@ let index = {
 			password: $("#password").val(),
 			email: $("#email").val()
 		};
-		
-		//console.log(data);
 		
 		// ajax호출시 default가 비동기 호출
 		//회원가입 수행 요청
@@ -35,16 +36,14 @@ let index = {
 	},
 	
 	login: function(){
-		//alert("user saveFunction 呼び出す");
+		//alert("user loginFunction 呼び出す");
 		let data = {
 			username: $("#username").val(),
-			password: $("#password").val(),
+			password: $("#password").val()
 		};
 		
-		//console.log(data);
+		console.log(data);
 		
-		// ajax호출시 default가 비동기 호출
-		//회원가입 수행 요청
 		$.ajax({
 			type: "POST",
 			url: "/blog/api/user/login",
@@ -54,7 +53,6 @@ let index = {
 		}).done(function(resp){
 			//성공시
 			alert("로그인이 완료되었습니다.")
-			console.log(resp)
 			location.href = "/blog";
 		}).fail(function(error){
 			//실패시

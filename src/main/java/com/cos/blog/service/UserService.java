@@ -21,6 +21,6 @@ public class UserService {
 
 	@Transactional(readOnly = true) //Select 할때 트랜잭션 시작, 서비스 종료시에 ㅌ랜잭션 정합성
 	public User userLogin(User user) {
-		return userRepository.findByUsernameandPassword(user.getUsername(),user.getPassword());
+		return userRepository.findByUsernameAndPassword(user.getUsername(),user.getPassword());
 	}
 }
